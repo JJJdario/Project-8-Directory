@@ -1,0 +1,130 @@
+body {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  width: 70vw;
+  height: 90vh;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  row-gap: 30px;
+  column-gap: 30px;
+  margin: auto;
+}
+.card:hover {
+  background-color: rgb(201, 201, 202);
+  transition-delay: 0.2s;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: solid 2px rgba(101, 100, 100, 0.3);
+  border-radius: 7px;
+  cursor: pointer;
+  margin: auto;
+}
+.avatar {
+  width: 30%;
+  border-radius: 50%;
+  padding: 20px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 8px;
+  margin-top: 6px;
+}
+
+header h1 {
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-left: 15%;
+  padding-top: 30px;
+}
+h2 {
+  margin-bottom: 0;
+}
+.text-container {
+  margin: auto 0;
+}
+
+.overlay {
+  margin: 0;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 1;
+  background: rgba(100, 100, 100, 0.4);
+}
+.modal {
+  width: 420px;
+  margin: 10% auto;
+  position: relative;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #778;
+  border-radius: 5px;
+  padding: 30px 20px;
+}
+hr {
+  margin: 30px;
+}
+.modal p {
+  line-height: 20px;
+}
+.modal h2 {
+  margin-bottom: 10px;
+}
+.overlay img {
+  height: 200px;
+  width: 50%;
+}
+
+.modal-close {
+  position: absolute;
+  right: 15px;
+  top: 5px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+.prevButton,
+.nextButton {
+  color: #fff;
+  border: #fff;
+  border-radius: 4px;
+  width: 80px;
+  height: 30px;
+  margin: 15px;
+  background-color: rgb(80, 166, 80);
+}
+.modal-close {
+  color: #fff;
+  border: #fff;
+  border-radius: 4px;
+  background-color: rgb(80, 166, 80);
+}
+
+button:hover {
+  background-color: rgb(58, 118, 58);
+}
+
+@media screen and (min-width: 860px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  }
+}
