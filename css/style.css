@@ -9,7 +9,7 @@ body {
   width: 70vw;
   height: 90vh;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   row-gap: 30px;
   column-gap: 30px;
   margin: auto;
@@ -20,7 +20,7 @@ body {
 }
 .card {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
   border: solid 2px rgba(101, 100, 100, 0.3);
@@ -30,8 +30,10 @@ body {
 }
 .avatar {
   width: 30%;
+  height: 70%;
   border-radius: 50%;
-  padding: 20px;
+  padding: 10px;
+  margin: auto 20px;
 }
 p {
   font-family: Arial, Helvetica, sans-serif;
@@ -49,7 +51,7 @@ h2 {
   margin-bottom: 0;
 }
 .text-container {
-  margin: auto 0;
+  margin: auto 20px auto 0;
 }
 
 .overlay {
@@ -115,16 +117,4 @@ hr {
 
 button:hover {
   background-color: rgb(58, 118, 58);
-}
-
-@media screen and (min-width: 860px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .grid-container {
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
-  }
 }
